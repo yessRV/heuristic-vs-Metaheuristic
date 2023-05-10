@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1095</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>281</width>
+      <height>343</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Particula</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="0" colspan="2">
+      <widget class="QPushButton" name="pushButton_generar">
+       <property name="text">
+        <string>Generar Random</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_red">
+       <property name="text">
+        <string>Alfa:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>N° de vertices:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Poblacion</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_velocidad">
+       <property name="text">
+        <string>Beta:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSpinBox" name="spinBox_poblacion">
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="spinBox_iteraciones">
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="spinBox_vertices">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>N° Iteraciones</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0" colspan="2">
+      <widget class="QPushButton" name="pushButton_pso">
+       <property name="text">
+        <string>PSO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QDoubleSpinBox" name="spinBox_alfa">
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>2.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>0.900000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QDoubleSpinBox" name="spinBox_beta">
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>2.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>361</y>
+      <width>280</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Salida</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_mostrar">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Siguiente</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>11</y>
+      <width>771</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tabla</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit_tab">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Identificador</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_buscar">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Buscar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_mostrar_tab">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Mostrar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Grafico</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="2" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_ver">
+        <property name="text">
+         <string>Ver</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_dibujar">
+        <property name="text">
+         <string>Dibujar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1095</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <widget class="QMenu" name="menuOrdenar">
+    <property name="title">
+     <string>Ordenar</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionID"/>
+    <addaction name="actionDistancia"/>
+    <addaction name="actionVelocidad"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuOrdenar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionID">
+   <property name="text">
+    <string>ID</string>
+   </property>
+  </action>
+  <action name="actionDistancia">
+   <property name="text">
+    <string>Distancia</string>
+   </property>
+  </action>
+  <action name="actionVelocidad">
+   <property name="text">
+    <string>Velocidad</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

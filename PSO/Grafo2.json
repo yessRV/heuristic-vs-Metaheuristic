@@ -1,0 +1,104 @@
+[
+     {
+          "id": 1,
+          "origen": {
+               "x": 0,
+               "y": 100
+          },
+          "destino": {
+               "x": 100,
+               "y": 100
+          },
+          "velocidad": 90,
+          "color": {
+               "red": 200,
+               "green": 200,
+               "blue": 100
+          }
+     },
+     {
+          "id": 2,
+          "origen": {
+               "x": 0,
+               "y": 100
+          },
+          "destino": {
+               "x": 200,
+               "y": 150
+          },
+          "velocidad": 90,
+          "color": {
+               "red": 200,
+               "green": 60,
+               "blue": 100
+          }
+     },
+     {
+          "id": 3,
+          "origen": {
+               "x": 100,
+               "y": 100
+          },
+          "destino": {
+               "x": 300,
+               "y": 0
+          },
+          "velocidad": 45,
+          "color": {
+               "red": 50,
+               "green": 200,
+               "blue": 100
+          }
+     },
+     {
+          "id": 4,
+          "origen": {
+               "x": 0,
+               "y": 100
+          },
+          "destino": {
+               "x": 500,
+               "y": 0
+          },
+          "velocidad": 48,
+          "color": {
+               "red": 252,
+               "green": 186,
+               "blue": 3
+          }
+     },
+     {
+          "id": 5,
+          "origen": {
+               "x": 300,
+               "y": 0
+          },
+          "destino": {
+               "x": 300,
+               "y": 100
+          },
+          "velocidad": 56,
+          "color": {
+               "red": 7,
+               "green": 3,
+               "blue": 252
+          }
+     },
+     {
+          "id": 5,
+          "origen": {
+               "x": 300,
+               "y": 100
+          },
+          "destino": {
+               "x": 400,
+               "y": 100
+          },
+          "velocidad": 87,
+          "color": {
+               "red": 173,
+               "green": 3,
+               "blue": 252
+          }
+     }
+]
